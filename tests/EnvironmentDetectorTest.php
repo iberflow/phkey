@@ -1,8 +1,9 @@
 <?php
 
-class EnvironmentDetectorTest extends PHPUnit_Framework_TestCase
-{
+namespace Iber\Phkey\Tests;
 
+class EnvironmentDetectorTest extends \PHPUnit_Framework_TestCase
+{
     public function testSettingEnvironment()
     {
         $detector = new \Iber\Phkey\Environment\Detector();
