@@ -1,0 +1,39 @@
+{
+  "name": "iber/phkey",
+  "description": "A PHP based API to capture key presses from the terminal.",
+  "keywords": [
+    "cli",
+    "keyboard",
+    "keys",
+    "key press"
+  ],
+  "homepage": "https://iber.lt",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ignas Bernotas",
+      "email": "ignas@iber.lt",
+      "homepage": "https://iber.lt"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ignasbernotas/phkey/issues",
+    "source": "https://github.com/ignasbernotas/phkey"
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "ext-readline": "*",
+    "symfony/event-dispatcher": "~2.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Iber\\Phkey\\": "src"
+    },
+    "files": [
+      "src/Helpers/unicode.php"
+    ]
+  }
+}
