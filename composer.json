@@ -1,5 +1,5 @@
 {
-  "name": "iber/phkey",
+  "name": "ignasbernotas/phkey",
   "description": "A PHP based API to capture key presses from the terminal.",
   "keywords": [
     "cli",
