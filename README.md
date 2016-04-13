@@ -1,8 +1,6 @@
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/iber/phkey/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/iber/phkey/?branch=master)
-
 # PHKey
 PHP based command line key listener. 
-![Example](https://iber.lt/projects/phkey.gif)
+![Example](https://iber.lt/assets/images/projects/phkey.gif)
 ------------
 
 This library provides an API to capture keys from the terminal. It currently supports latin-basic range of characters such as direction keys, function keys (F*), enter, space, insert, delete, backspace, escape, a-z, etc.
