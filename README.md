@@ -8,7 +8,7 @@ This library provides an API to capture keys from the terminal. It currently sup
 ## Installation
 You can either download this library as a zip, or simply install it via composer:
 ```
-composer require iber/phkey
+composer require ignasbernotas/phkey
 ```
 
 ## Limitations
