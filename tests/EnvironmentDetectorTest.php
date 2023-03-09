@@ -1,12 +1,12 @@
 <?php
 
-namespace Iber\Phkey\Tests;
+namespace Atatusoft\PhpKeyListener\Tests;
 
 class EnvironmentDetectorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSettingEnvironment()
     {
-        $detector = new \Iber\Phkey\Environment\Detector();
+        $detector = new \Atatusoft\PhpKeyListener\Environment\Detector();
 
         $detector->setEnvironment('Darwin');
         $this->assertSame('Unix', $detector->getEnvironment());
@@ -26,30 +26,30 @@ class EnvironmentDetectorTest extends \PHPUnit_Framework_TestCase
 
     public function testInstanceBasedOnEnvironment()
     {
-        $detector = new \Iber\Phkey\Environment\Detector();
+        $detector = new \Atatusoft\PhpKeyListener\Environment\Detector();
 
         $detector->setEnvironment('Darwin');
         $this->assertInstanceOf(
-            'Iber\\Phkey\\Environment\\Unix\\Listener',
+            'Atatusoft\\PhpKeyListener\\Environment\\Unix\\Listener',
             $detector->getListenerInstance()
         );
 
         $detector->setEnvironment('Random');
         $this->assertInstanceOf(
-            'Iber\\Phkey\\Environment\\Unix\\Listener',
+            'Atatusoft\\PhpKeyListener\\Environment\\Unix\\Listener',
             $detector->getListenerInstance(),
             'Not implemented environment should default to Unix'
         );
 
         $detector->setEnvironment('Linux');
         $this->assertInstanceOf(
-            'Iber\\Phkey\\Environment\\Unix\\Listener',
+            'Atatusoft\\PhpKeyListener\\Environment\\Unix\\Listener',
             $detector->getListenerInstance()
         );
 
         $detector->setEnvironment('Unix');
         $this->assertInstanceOf(
-            'Iber\\Phkey\\Environment\\Unix\\Listener',
+            'Atatusoft\\PhpKeyListener\\Environment\\Unix\\Listener',
             $detector->getListenerInstance()
         );
     }

@@ -2,8 +2,8 @@
 
 include __DIR__ . '/../vendor/autoload.php';
 
-use \Iber\Phkey\Events\KeyPressEvent;
-use \Iber\Phkey\Environment\Detector;
+use \Atatusoft\PhpKeyListener\Events\KeyPressEvent;
+use \Atatusoft\PhpKeyListener\Environment\Detector;
 
 $detect = new Detector();
 $listener = $detect->getListenerInstance();

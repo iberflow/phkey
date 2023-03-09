@@ -1,15 +1,15 @@
 <?php
 
-namespace Iber\Phkey\IO;
+namespace Atatusoft\PhpKeyListener\IO;
 
-use Iber\Phkey\Contracts\StreamableInterface;
+use Atatusoft\PhpKeyListener\Contracts\StreamableInterface;
 
 /**
  * Class Stream
  *
  * Allows watching a stream and getting contents from it
  *
- * @package  Iber\Phkey\IO
+ * @package  Atatusoft\PhpKeyListener\IO
  */
 class Stream implements StreamableInterface
 {

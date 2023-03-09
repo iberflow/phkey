@@ -1,10 +1,10 @@
 <?php
 
-namespace Iber\Phkey\Environment\Unix;
+namespace Atatusoft\PhpKeyListener\Environment\Unix;
 
-use Iber\Phkey\Contracts\ListenableInterface;
-use Iber\Phkey\Contracts\StreamableInterface;
-use Iber\Phkey\Events\KeyPressEvent;
+use Atatusoft\PhpKeyListener\Contracts\ListenableInterface;
+use Atatusoft\PhpKeyListener\Contracts\StreamableInterface;
+use Atatusoft\PhpKeyListener\Events\KeyPressEvent;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
@@ -12,7 +12,7 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
  *
  * Allows listening for keyboard keys and bind events to those keys
  *
- * @package  Iber\Phkey\Environment\Unix
+ * @package  Atatusoft\PhpKeyListener\Environment\Unix
  */
 class Listener implements ListenableInterface
 {
@@ -33,7 +33,7 @@ class Listener implements ListenableInterface
     /**
      * Object responsible for key matching
      *
-     * @type \Iber\Phkey\Contracts\MatchableInterface
+     * @type \Atatusoft\PhpKeyListener\Contracts\MatchableInterface
      */
     protected $matcher;
 
@@ -52,7 +52,7 @@ class Listener implements ListenableInterface
     protected $eventDispatcher;
 
     /**
-     * @var \Iber\Phkey\Contracts\StreamableInterface
+     * @var \Atatusoft\PhpKeyListener\Contracts\StreamableInterface
      */
     protected $stream;
 

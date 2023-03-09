@@ -19,8 +19,8 @@ This package only works on UNIX/Linux based systems since the Windows PHP versio
 
 ##### Capture all keys
 ```php
-use \Iber\Phkey\Events\KeyPressEvent;
-use \Iber\Phkey\Environment\Detector;
+use \Atatusoft\PhpKeyListener\Events\KeyPressEvent;
+use \Atatusoft\PhpKeyListener\Environment\Detector;
 
 $detect = new Detector();
 $listener = $detect->getListenerInstance();

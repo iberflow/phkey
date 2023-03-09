@@ -1,11 +1,11 @@
 <?php
 
-namespace Iber\Phkey\Contracts;
+namespace Atatusoft\PhpKeyListener\Contracts;
 
 /**
  * Interface StreamableInterface
  *
- * @package  Iber\Phkey\Contracts
+ * @package  Atatusoft\PhpKeyListener\Contracts
  */
 interface StreamableInterface
 {

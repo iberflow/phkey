@@ -30,7 +30,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Iber\\Phkey\\": "src"
+      "Atatusoft\\PhpKeyListener\\": "src"
     },
     "files": [
       "src/Helpers/unicode.php"

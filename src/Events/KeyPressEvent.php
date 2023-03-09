@@ -1,13 +1,13 @@
 <?php
 
-namespace Iber\Phkey\Events;
+namespace Atatusoft\PhpKeyListener\Events;
 
 use \Symfony\Component\EventDispatcher\Event;
 
 /**
  * Class KeyPressEvent
  *
- * @package  Iber\Phkey\Events
+ * @package  Atatusoft\PhpKeyListener\Events
  */
 class KeyPressEvent extends Event
 {

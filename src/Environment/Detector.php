@@ -1,9 +1,9 @@
 <?php
 
-namespace Iber\Phkey\Environment;
+namespace Atatusoft\PhpKeyListener\Environment;
 
-use Iber\Phkey\Contracts\StreamableInterface;
-use Iber\Phkey\IO\Stream;
+use Atatusoft\PhpKeyListener\Contracts\StreamableInterface;
+use Atatusoft\PhpKeyListener\IO\Stream;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
 /**
@@ -13,7 +13,7 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
  * automatic creation of the key listener based on different
  * environment implementations
  *
- * @package  Iber\Phkey\Environment
+ * @package  Atatusoft\PhpKeyListener\Environment
  */
 class Detector
 {
@@ -98,15 +98,15 @@ class Detector
      * @param EventDispatcher|null $eventDispatcher
      * @param StreamableInterface|null $stream
      *
-     * @return \Iber\Phkey\Contracts\ListenableInterface
+     * @return \Atatusoft\PhpKeyListener\Contracts\ListenableInterface
      */
     public function getListenerInstance(EventDispatcher $eventDispatcher = null, StreamableInterface $stream = null)
     {
         //instantiate the key matcher object
-        $reflection = new \ReflectionClass('\\Iber\\Phkey\\Environment\\' . $this->getEnvironment() . '\\Matcher');
+        $reflection = new \ReflectionClass('\\Atatusoft\\PhpKeyListener\\Environment\\' . $this->getEnvironment() . '\\Matcher');
         $matcher = $reflection->newInstance();
 
-        $reflection = new \ReflectionClass('\\Iber\\Phkey\\Environment\\' . $this->getEnvironment() . '\\Listener');
+        $reflection = new \ReflectionClass('\\Atatusoft\\PhpKeyListener\\Environment\\' . $this->getEnvironment() . '\\Listener');
 
         if (null === $eventDispatcher) {
             $eventDispatcher = new EventDispatcher();

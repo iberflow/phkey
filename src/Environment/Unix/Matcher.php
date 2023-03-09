@@ -1,15 +1,15 @@
 <?php
 
-namespace Iber\Phkey\Environment\Unix;
+namespace Atatusoft\PhpKeyListener\Environment\Unix;
 
-use Iber\Phkey\Contracts\MatchableInterface;
+use Atatusoft\PhpKeyListener\Contracts\MatchableInterface;
 
 /**
  * Class Matcher
  *
  * Responsible for mapping keys to terminal input
  *
- * @package  Iber\Phkey\Environment\Unix
+ * @package  Atatusoft\PhpKeyListener\Environment\Unix
  */
 class Matcher implements MatchableInterface
 {
