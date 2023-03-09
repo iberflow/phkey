@@ -1,3 +1,4 @@
 composer.lock
-vendor/
-.idea/
+/vendor/
+/.idea/
+.phpunit.result.cache
