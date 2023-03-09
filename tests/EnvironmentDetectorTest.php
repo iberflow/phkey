@@ -2,7 +2,9 @@
 
 namespace Atatusoft\PhpKeyListener\Tests;
 
-class EnvironmentDetectorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class EnvironmentDetectorTest extends TestCase
 {
     public function testSettingEnvironment()
     {
